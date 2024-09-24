@@ -1,3 +1,6 @@
+
+addEventListener("DOMContentLoaded", () => Ma_signature());
+
 const entrie = document.querySelector("#put");
 
 let recive = "";
@@ -8,10 +11,58 @@ const bouton = document.querySelector("#btn");
 
 let ville_presente = false;
 
-addEventListener("DOMContentLoaded", () => Ma_signature());
+
 const url =
   "https://api.meteo-concept.com/api/forecast/daily/0?token=36ef80f9b9c5e2310d624239d73726c34673d397cf14101abb5c1e8239ce23f4&insee=";
 
+
+bouton.addEventListener("click", () => Meteo_API(recive));
+
+function Meteo_API(ville) {
+  ville = entrie.value;
+  retour.innerText = "Un instant";
+  if (Code_INSEE[ville] == undefined) {
+    const re = document.createElement("p");
+    alert("Saisisez une autre ville");
+    re.innerText =
+      "Nous sommes désolé, nous ne disposons que des informations sur les villes de France";
+    retour.innerText = "";
+    retour.appendChild(re);
+  } else {
+    fetch(url + Code_INSEE[ville])
+      .then((reponse) => {
+        return reponse.json();
+      })
+      .then((attribut) => {
+        let city = new Object();
+        let proprieter = new Object();
+        const ptext = document.createElement("p");
+        city = attribut.city;
+        proprieter = attribut.forecast;
+        ptext.innerText =
+          "Votre ville " +
+          city.name +
+          ", pour aujourd'hui" +
+          ", a " +
+          proprieter.probafog +
+          "% de risque de brouillard, " +
+          proprieter.probafrost +
+          "% de risque de givre, " +
+          proprieter.probarain +
+          "% de risque de pluie";
+        retour.innerText = "";
+        retour.appendChild(ptext);
+      });
+  }
+}
+
+function Ma_signature() {
+  const p =
+    "Site réaliser par DEGBE Koffitsè Daniel. Contact : www.linkedin.com/in/daniel-degbe-a4078629b";
+  console.log(p);
+}
+
+/*
 let Code_INSEE = new Object();
 
 Code_INSEE = {
@@ -65,49 +116,4 @@ Code_INSEE = {
   Poitiers: "86194",
   Aubervilliers: "93001",
 };
-
-bouton.addEventListener("click", () => Meteo_API(recive));
-
-function Meteo_API(ville) {
-  ville = entrie.value;
-  retour.innerText = "Un instant";
-  if (Code_INSEE[ville] == undefined) {
-    const re = document.createElement("p");
-    alert("Saisisez une autre ville");
-    re.innerText =
-      "Nous sommes désolé, nous ne disposons que des informations sur les villes de France";
-    retour.innerText = "";
-    retour.appendChild(re);
-  } else {
-    fetch(url + Code_INSEE[ville])
-      .then((reponse) => {
-        return reponse.json();
-      })
-      .then((attribut) => {
-        let city = new Object();
-        let proprieter = new Object();
-        const ptext = document.createElement("p");
-        city = attribut.city;
-        proprieter = attribut.forecast;
-        ptext.innerText =
-          "Votre ville " +
-          city.name +
-          ", pour aujourd'hui" +
-          ", a " +
-          proprieter.probafog +
-          "% de risque de brouillard, " +
-          proprieter.probafrost +
-          "% de risque de givre, " +
-          proprieter.probarain +
-          "% de risque de pluie";
-        retour.innerText = "";
-        retour.appendChild(ptext);
-      });
-  }
-}
-
-function Ma_signature() {
-  const p =
-    "Site réaliser par DEGBE Koffitsè Daniel. Contact : www.linkedin.com/in/daniel-degbe-a4078629b";
-  console.log(p);
-}
+*/
