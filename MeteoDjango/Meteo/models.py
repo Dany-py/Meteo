@@ -3,7 +3,7 @@ from django.db import models
 # Create your models here.
 
 class CodeInse(models.Model):
-  ville= models.CharField(max_length=50)
+  town= models.CharField(max_length=50)
   code= models.IntegerField()
 
 

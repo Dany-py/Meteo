@@ -1,0 +1,13 @@
+
+"Url de l'api Meteo-concept"
+const url =
+  "https://api.meteo-concept.com/api/forecast/daily/0?token=36ef80f9b9c5e2310d624239d73726c34673d397cf14101abb5c1e8239ce23f4&insee=";
+
+
+*** Paramètre de l'admin ***
+commande de création "python manage.py createsuperuser"
+admin {
+  "username": "Dany-py"
+  "password": "Dany0405"
+  "email": "danydegbe@gmail.com"
+}
