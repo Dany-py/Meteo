@@ -1,0 +1,2 @@
+
+webgunicorn django_project.wsgi --chdir MeteoDjango/MeteoDjango --log-file -
