@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "meteo"
+version = "0.1.0"
+description = "Weather web app"
+authors = ["Dany-py <danydegbe@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+Django = "^5.0"
+python = "^3.1"
+
+[tool.poetry.group.dev.dependencies]
+consolidate-requirements = "^0.0.3"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
