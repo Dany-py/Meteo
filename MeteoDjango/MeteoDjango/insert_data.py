@@ -1,0 +1,62 @@
+"""
+This script inserts data into the database.
+"""
+
+import os
+import django
+
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'django_project.settings')
+django.setup()
+
+from Meteo.models import CodeInse
+
+# Insérer des données
+CodeInse.objects.create(ville="Paris", code="75056")
+CodeInse.objects.create(ville="Marseil", code="13055")
+CodeInse.objects.create(ville = "Lyon", code="69123")
+CodeInse.objects.create(ville = "Toulouse", code="31555")
+CodeInse.objects.create(ville = "Nice", code="06088")
+CodeInse.objects.create(ville = "Nante", code="44109")
+CodeInse.objects.create(ville = "Montpelier", code="34172")
+CodeInse.objects.create(ville = "Strasbourg", code="67482")
+CodeInse.objects.create(ville = "Bordeaux", code="33063")
+CodeInse.objects.create(ville = "Lille", code="59350")
+CodeInse.objects.create(ville = "Rennes", code="35238")
+CodeInse.objects.create(ville = "Toulon", code="83137")
+CodeInse.objects.create(ville = "Reims", code="51454")
+CodeInse.objects.create(ville = "Saint Etienne", code="42218")
+CodeInse.objects.create(ville = "Havre", code="76351")
+CodeInse.objects.create(ville = "Dijon", code="21231")
+CodeInse.objects.create(ville = "Grenoble", code="38185")
+CodeInse.objects.create(ville = "Angers", code="49007")
+CodeInse.objects.create(ville = "Villeurbanne", code="69266")
+CodeInse.objects.create(ville = "Saint Denis", code="93066")
+CodeInse.objects.create(ville = "Nimes", code="30189")
+CodeInse.objects.create(ville = "Aix en Provence", code="13001")
+CodeInse.objects.create(ville = "Clermont Ferrand", code="63113")
+CodeInse.objects.create(ville = "Le Mans", code="72181")
+CodeInse.objects.create(ville = "Brest", code="29019")
+CodeInse.objects.create(ville = "Tours", code="37261")
+CodeInse.objects.create(ville = "Amiens", code="80021")
+CodeInse.objects.create(ville = "Annecy", code="74010")
+CodeInse.objects.create(ville = "Limoges", code="87085")
+CodeInse.objects.create(ville = "Metz", code="57463")
+CodeInse.objects.create(ville = "Boulogne Billancourt", code="92012")
+CodeInse.objects.create(ville = "Perpignan", code="66136")
+CodeInse.objects.create(ville = "Besançon", code="25056")
+CodeInse.objects.create(ville = "Orléans", code="45234")
+CodeInse.objects.create(ville = "Rouen", code="76540")
+CodeInse.objects.create(ville = "Montreuil", code="93048")
+CodeInse.objects.create(ville = "Caen", code="14118")
+CodeInse.objects.create(ville = "Argenteuil", code="95018")
+CodeInse.objects.create(ville = "Mulhouse", code="68224")
+CodeInse.objects.create(ville = "Saint Paul", code="73269")
+CodeInse.objects.create(ville = "Nancy", code="54395")
+CodeInse.objects.create(ville = "Tourcoing", code="59599")
+CodeInse.objects.create(ville = "Roubaix", code="59512")
+CodeInse.objects.create(ville = "Nanterre", code="92050")
+CodeInse.objects.create(ville = "Vitry sur Seine", code="94081")
+CodeInse.objects.create(ville = "Créteil", code="94028")
+CodeInse.objects.create(ville = "Avignon", code="84007")
+CodeInse.objects.create(ville = "Poitiers", code="86194")
+CodeInse.objects.create(ville = "Aubervilliers", code="93001")
