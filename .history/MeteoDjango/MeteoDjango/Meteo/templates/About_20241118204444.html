@@ -1,0 +1,109 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>About</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="{% static 'css/about.css' %}">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-md" style="background-color:#FBFCFC;">
+    
+    <div class="btn-toolbar" style = "margin-left: 30%;">
+      <a class = "btn" href = "{% url 'Meteo:accueil' %}">
+        Accueil
+      </a>
+      <a class = "btn" href = "{% url 'Meteo:about' %}">
+        About
+      </a>
+      <a class = "btn" href = "{% url 'Meteo:contact' %}">
+        Contacts
+      </a>
+    </div>
+  </nav>
+  
+
+  <div class="container" style="margin-top: 2em;">
+    <h2 class="text-center">
+      À propos de nous<br><br>
+    </h1>
+
+    <p1>
+      Bienvenue sur Dany Meteo, votre source fiable pour les prévisions météorologiques. Nous sommes dédiés à vous fournir des informations météorologiques précises et actualisées, couvrant 50 villes françaises.
+    </p1>
+  </div>
+
+  <div class="container" style="margin-top: 2em;">
+    <h2 class="text-center">
+      Notre mission<br><br>
+    </h1>
+
+    <p1>
+      Notre mission est de rendre les informations météorologiques accessibles à tous, que vous planifiez une journée à l'extérieur, que vous soyez un passionné de météorologie ou que vous souhaitiez simplement rester informé des conditions météorologiques actuelles. Nous croyons en la simplicité et la transparence, c'est pourquoi notre site est facile à utiliser et sans publicité envahissante.
+    </p1>
+  </div>
+
+  <div class="container" style="margin-top: 2em;">
+    <h2 class="text-center">
+      Comment ça marche<br><br>
+    </h1>
+
+    <p1>
+      Nous utilisons une API météorologique pour collecter des données en temps réel sur les conditions météorologiques. Ces données sont ensuite traitées et présentées de manière claire et concise sur notre site, afin que vous puissiez obtenir rapidement les informations dont vous avez besoin. En raison des exigences de l'API utilisée, nous fournissons des prévisions météorologiques pour 50 villes françaises.
+    </p1>
+  </div>
+
+  <div class="container" style="margin-top: 2em;">
+    <h2 class="text-center">
+      Pourquoi nous choisir<br><br>
+    </h1>
+
+    <ul>
+      <li>
+        Gratuit et accessible : Nous croyons que tout le monde devrait avoir accès à des informations météorologiques précises sans avoir à payer.<br><br>
+      </li>
+
+      <li>
+         Données en temps réel : Nos prévisions sont mises à jour en temps réel, vous garantissant des informations toujours actuelles.<br><br>
+      </li>
+
+      <li>
+        Facilité d'utilisation : Notre interface est conçue pour être intuitive et facile à naviguer, même pour les utilisateurs non techniques.<br><br>
+      </li>
+
+      <li>
+        Couverture nationale : Nous offrons des prévisions pour 50 villes réparties à travers la France.<br>
+      </li>
+      
+    </ul>
+    
+  </div>
+
+
+  <div class="container" style="margin-top: 2em;">
+    <h2 class="text-center">
+      Rejoignez notre communauté<br><br>
+    </h1>
+      <p1>
+        Nous vous invitons à explorer notre site et à découvrir par vous-même la simplicité et l'efficacité de Dany Meteo. Si vous avez des questions, des commentaires ou des suggestions, n'hésitez pas à nous contacter. Votre feedback est précieux pour nous aider à améliorer nos services et à répondre encore mieux à vos besoins.<br><br>Merci de faire confiance à Dany Meteo pour vos prévisions météorologiques !
+      </p1>  
+  </div>
+
+  <footer>
+    <div class="container-fluid text-center" style="margin-top: 2em; width: 100%; height: 10em;">
+      <p1>
+        <br><br><br>
+        Copyright &copy; 2024 Dany Meteo. Tous droits réservés.
+      </p1>
+    </div>
+  </footer>
+  
+  <script src="About.js"></script>
+</body>
+
+</html>

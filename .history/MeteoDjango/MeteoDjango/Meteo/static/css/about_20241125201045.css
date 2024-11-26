@@ -1,0 +1,18 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body{
+  background: rgb(44,203,249);
+  background: radial-gradient(circle, rgba(44,203,249,0.3701855742296919) 56%, rgba(16,129,213,0.05085784313725494) 89%);
+}
+
+footer{
+  background-color: black;
+
+}
+
+.container{
+  border-radius: 4%;
+}

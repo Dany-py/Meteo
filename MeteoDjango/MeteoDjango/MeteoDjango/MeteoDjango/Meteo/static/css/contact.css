@@ -3,14 +3,10 @@ html {
   width: 100%;
 }
 
-body{
-  background: rgb(44,203,249);
-  background: radial-gradient(circle, rgba(44,203,249,0.3701855742296919) 56%, rgba(16,129,213,0.05085784313725494) 89%);
-}
 
 footer{
-  background: rgb(44,203,249);
-  background: linear-gradient(180deg, rgba(44,203,249,0.3701855742296919) 0%, rgba(101,180,238,0.8873626373626373) 74%);
+  background-color: black;
+  color: white
 }
 
 .container{
@@ -28,17 +24,14 @@ footer{
 }
 
 button{
-  border: none;
-  border-radius: 5%;
-  background-color: #6bd68b;
-  margin-bottom: 1em;
+  background-color: #5eed8d;
+  text-align: center;
+  border : none;
+  border-radius: 30px;
+  width : 9rem;
+  height: 50px;
 }
 
-.img{
-  display: flex;
-  justify-content: space-between;
-  margin: 2em;
-}
 
 @media (min-width: 350px){
 
