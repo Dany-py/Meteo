@@ -220,7 +220,7 @@ footer{
     display: flex;
     flex-wrap: wrap;   
     flex-direction: column;
-    text-align: center;
+    text-align: cet;
     justify-content: center;
     align-items: center;
     background-color: #c8eef5;
