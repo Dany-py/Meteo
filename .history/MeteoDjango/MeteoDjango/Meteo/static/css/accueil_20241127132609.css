@@ -207,7 +207,7 @@ footer{
   #introduction{
     text-align: center;
     margin-top: 2em;
-    width: 100%;
+    width: 15rem;
     height: 50rem;
     padding: 5em;  
     border-radius: 2px;
@@ -236,15 +236,15 @@ footer{
     height: 40rem;
   }
   #slide1{
-    animation: none;
+    animation: slideIn 7s ease-in-out infinite;
   }
   
   #slide2{
-    animation: none;
+    animation: slideDown 7s ease-in-out infinite;
   }
   
   #slide3{
-    animation: none;
+    animation: slideOut 7s ease-in-out infinite;
   }
   .writen{
     transform: translateY(10rem);

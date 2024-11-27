@@ -202,12 +202,12 @@ footer{
   height: 10em;
 }
 
-@media screen and (max-width : 767px) {
+@media screen and (max-width : px) {
 
   #introduction{
     text-align: center;
     margin-top: 2em;
-    width: 100%;
+    width: 15rem;
     height: 50rem;
     padding: 5em;  
     border-radius: 2px;
@@ -235,17 +235,11 @@ footer{
     width: 100%;
     height: 40rem;
   }
-  #slide1{
-    animation: none;
-  }
   
-  #slide2{
+  #div3{
     animation: none;
   }
-  
-  #slide3{
-    animation: none;
-  }
+
   .writen{
     transform: translateY(10rem);
   }
